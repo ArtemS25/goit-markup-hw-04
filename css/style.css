@@ -17,6 +17,7 @@
   --footer-bgr-cl: #2f303a;
   --main-bgr-cl: #f5f5f5;
   --hero-bgr-cl: #2f303a;
+  --icons-fill: #afb1b8;
   /* Others */
   --items: 3;
   --indent: 30px;
@@ -123,20 +124,36 @@ img {
   color: var(--accent-bgr-cl);
 }
 
-.contact-link-header:hover,
-.contact-link-header:focus {
-  color: var(--accent-bgr-cl);
-}
-
 .contact-link-header {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
   color: currentColor;
 }
+
+.contact-link-header:hover,
+.contact-link-header:focus {
+  color: var(--accent-bgr-cl);
+}
+
+.icons-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* Hero */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-bgr-cl);
@@ -209,6 +226,18 @@ img {
   color: var(--secondary-txt-cl);
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
 /* Чим ми займаємося */
 
 .group {
@@ -244,8 +273,15 @@ img {
 }
 
 .team-wrap {
+  padding-left: 32px;
+  padding-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: var(--light-txt-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -269,6 +305,7 @@ img {
 }
 
 .team-subscr {
+  margin-bottom: 16px;
   color: var(--secondary-txt-cl);
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -281,6 +318,81 @@ img {
   height: auto;
 }
 
+/* Socials */
+
+.socials-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--icons-fill);
+  background-color: var(--light-txt-cl);
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--light-txt-cl);
+  background-color: var(--accent-bgr-cl);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* Customers */
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.conteiner-customers {
+  display: block;
+}
+
+.customers-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.regular-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icons-fill);
+  border: 1px solid var(--icons-fill);
+  border-radius: 4px;
+}
+
+.regular-icons:hover,
+.regular-icons:focus {
+  color: var(--accent-bgr-cl);
+}
+
+.customers-icons {
+  fill: currentColor;
+}
 /* Підвал */
 .footer {
   background-color: var(--footer-bgr-cl);
@@ -290,6 +402,15 @@ img {
 
 .container-footer {
   display: block;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-inf {
+  margin-right: 70px;
 }
 
 .footer-list {
@@ -334,6 +455,45 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-bgr-cl);
+}
+
+.socials-footer-title {
+  color: var(--light-txt-cl);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.socials-footer {
+  width: 206px;
+}
+
+.socials-footer-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.socials-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--light-txt-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+  background-color: var(--accent-bgr-cl);
+}
+
+.socials-footer-icon {
+  fill: currentColor;
 }
 
 /* Portfolio */
