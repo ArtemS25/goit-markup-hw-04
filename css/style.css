@@ -374,7 +374,7 @@ img {
   list-style: none;
 }
 
-.regular-icons {
+.customers-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,9 +385,10 @@ img {
   border-radius: 4px;
 }
 
-.regular-icons:hover,
-.regular-icons:focus {
+.customers-link:hover,
+.customers-link:focus {
   color: var(--accent-bgr-cl);
+  border: 1px solid var(--accent-bgr-cl);
 }
 
 .customers-icons {
